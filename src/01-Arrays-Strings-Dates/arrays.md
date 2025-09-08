@@ -12,7 +12,7 @@ Each item in the array is an object that represents 1 letter written to the gove
 
 <!-- Declare `dearGovernerLetters` array of objects -->
 ```js
-let dearGovernerLetters = [
+let dearGovernerLetters = 
   {
     "record_unit": 1,
     "title": "Letter: Albert D. Grauer and Paula M. Grauer to Gov. Dan K. Moore, April 5, 1968",
@@ -97,10 +97,10 @@ Arrays are iterables, i.e., you can traverse them programmatically with special 
 
 You can access the item index with for...in loops.
 
-```javascript
-for (let ___ in dearGovernerLetters) {
+```js
+for (let letterNum in dearGovernerLetters) {
   // log each item
-  console.log()
+  
 }
 ```
 
@@ -108,10 +108,10 @@ for (let ___ in dearGovernerLetters) {
 
 You can access the item value with for...of loops.
 
-```javascript
-for (let ___ of dearGovernerLetters) {
+```js
+for (let letters of dearGovernerLetters) {
   // log each item
-  console.log()
+  c
 }
 ```
 
@@ -124,10 +124,10 @@ We can do more interesting evaluations by combining for loops and conditional if
 Since `for...in` loops can access the item index, you should use this structure when the position helps you create a condition with this value.
 
 ```javascript
-for (let ___ in dearGovernerLetters) {
-  if () {
+for (let letterNum in dearGovernerLetters) {
+  if (dearGovernerLetters[letterNum].stance != "Pro") {
     // Do something in here
-    console.log()
+    c
   }
 }
 ```
@@ -136,11 +136,11 @@ for (let ___ in dearGovernerLetters) {
 
 You can access the item value with for...of loops.
 
-```javascript
-for (let ___ of dearGovernerLetters) {
-  if () {
+```js
+for (let letter of dearGovernerLetters) {
+  if (letter.stance != "Ant1") {
     // Do something in here
-    console.log()
+    console.log(letter)
   }
 }
 ```
